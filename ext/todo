@@ -1,7 +1,9 @@
-V2
+NEXT:
     1-Chargement des iframes lors d'appuis sur un bouton.
     2-Meilleure catégorisation, accordéon? card?
     3-Version mobile
+    4-Ajout d'une partie analyse sur une seconde page avec des iframes/liens sur les divers site d'analyse.
+    5-Ajout d'îcone pour les site qui en ont
     
 Problèmes connus:
     1-Au chargement la vue se déplace sur l'iframe Can i use.
