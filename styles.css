@@ -1,0 +1,52 @@
+:root{
+    --main-bgc: #fff;
+    --main-txt-clr: #000;
+    --theme-box-bgc: #fff;
+    --hover-theme-box-bgc: #fff;
+    --theme-txt-clr: #000;
+    --link-clr: #000;
+    --hover-link-clr: #000;
+}
+
+html,body{
+    twidth: 100%;
+    theight: 100%;
+    tmargin: 0px;
+    tpadding: 0px;
+    toverflow-x: hidden;
+}
+
+body{
+    padding: 0 10px;
+    background-color: var(--main-bgc);
+    color: var(--main-txt-clr);
+}
+
+a{
+    color: var(--link-clr);
+    transition: color .3s ease;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--hover-link-clr);
+}
+
+.border-box{
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.theme-box{
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+    background-color: var(--theme-box-bgc);
+    color: var(--theme-txt-clr);
+    padding: 5px 10px;
+    transition: background-color .3s ease;
+}
+
+.theme-box:hover{
+    background-color: var(--hover-theme-box-bgc);
+}
