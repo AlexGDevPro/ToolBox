@@ -1,52 +1,146 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*FONT IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*VARIABLES*/
 :root{
-    --main-bgc: #fff;
-    --main-txt-clr: #000;
-    --theme-box-bgc: #fff;
-    --hover-theme-box-bgc: #fff;
+    --main-bgc: #404040;
+    --main-txt-clr: #a6a6a6;
+    --theme-box-bgc: rgb(79, 79, 79);
+    --hover-theme-box-bgc: rgb(102, 102, 102);
     --theme-txt-clr: #000;
-    --link-clr: #000;
-    --hover-link-clr: #000;
+    --link-clr: #a6a6a6;
+    --title-link-clr: #a6a6a6;
+    --hover-title-link-clr: #1d1d1d;
+    --hover-link-clr: #1d1d1d;
+    --backToTopButton-bgc: rgba(0, 0, 0, 0.38);
+    --hover-backToTopButton-bgc: rgba(0, 0, 0, 0.85);
+    --backToTopButton-txt: #ff8c00;
+    --backToTopButton-brd-clr: #ff8c00;
+    --headerAndFooter-bgc: rgba(0, 0, 0, 0.6);
+    --footer-txt-clr: #3969e3;
+    --hover-footer-link-clr: #86a9ff;
 }
 
+/*GENERALS*/
 html,body{
-    twidth: 100%;
-    theight: 100%;
-    tmargin: 0px;
-    tpadding: 0px;
-    toverflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body{
-    padding: 0 10px;
-    background-color: var(--main-bgc);
+    background: var(--main-bgc);
     color: var(--main-txt-clr);
+    font-family: 'Roboto', sans-serif;
 }
 
+#main-header, #main-footer{
+    background-color: var(--headerAndFooter-bgc);
+}
+
+/*LINKS*/
 a{
     color: var(--link-clr);
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
     transition: color .3s ease;
     text-decoration: none;
+}
+
+a>p::first-letter{
+    text-decoration: underline!important;
 }
 
 a:hover{
     color: var(--hover-link-clr);
 }
 
+h2>a{
+    color: var(--title-link-clr);
+}
+
+.title>a:hover{
+    color: var(--hover-title-link-clr);
+}
+
+#main-footer p>a{
+    color: var(--footer-txt-clr);
+}
+
+#main-footer p>a:hover{
+    color: var(--hover-footer-link-clr);
+}
+
+/*BORDER BOX*/
 .border-box{
     border-radius: 15px;
     padding: 5px 10px;
 }
 
+/*THEME BOX*/
 .theme-box{
     height: auto;
     width: 100%;
+    border: transparent 1px solid;
     border-radius: 15px;
-    background-color: var(--theme-box-bgc);
+    background: var(--theme-box-bgc);
     color: var(--theme-txt-clr);
     padding: 5px 10px;
-    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease, border-color .3s ease;
+    -o-transition: background-color .3s ease, border-color .3s ease;
+    transition: background-color .3s ease, border-color .3s ease;
 }
 
 .theme-box:hover{
     background-color: var(--hover-theme-box-bgc);
+    border-color: yellow;
+}
+
+#second-row .theme-box>p, #third-row .theme-box>p{
+    color: var(--main-txt-clr);
+}
+
+/*BACK TO TOP BUTTON*/
+.backToTopButton{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    border: solid 2px var(--backToTopButton-brd-clr);
+    border-radius: 10px;
+    background-color: var(--backToTopButton-bgc);
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.backToTopButton:hover{
+    background-color: var(--hover-backToTopButton-bgc);
+}
+
+.backToTopButton a{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.backToTopButton i{
+    color: var(--backToTopButton-txt);
+}
+
+/*GENERIC CLASSES*/
+.custom-link{
+    color: var(--footer-txt-clr);
+}
+
+.custom-link:hover{
+    color: var(--hover-footer-link-clr);
 }

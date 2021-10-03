@@ -11,8 +11,8 @@
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 	integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 	crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
-    <!--<link rel="icon" href="favicon.ico">-->
+    <title>ToolBox</title>
+    <link rel="icon" href="./favicon.ico">
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -20,73 +20,81 @@
 </head>
 <body>
 <!--    MAIN WRAPPER-->
-    <main class="container-fluid" id="main-wrapper">
+    <main class="container-fluid" id="top">
 <!--        HEADER-->
-        <header class="row" id="main-header">
+        <header class="row py-3 mb-3" id="main-header">
             <h1 class="text-center text-uppercase">ToolBox</h1>
         </header>
 
 <!--        FIRST ROW-->
-        <div class="row" id="first-row">
-            <div class="col-4 border-box" id="fr-first-col">
-                <h2 class="text-center fs-5 fw-normal">Documentations</h2>
+        <div class="row my-4" id="first-row">
+            <div class="col-4 border-box mx-auto" id="fr-first-col">
+<!--                DOCS-->
+                <h2 class="text-center fs-4 fw-normal">Documentations</h2>
                 <div class="theme-box">
                     <ul class="list-unstyled">
-                        <li><a href="https://developer.mozilla.org/fr/">MDN</a></li>
-                        <li><a href="https://www.php.net/manual/fr/">PHP</a></li>
-                        <li><a href="https://api.jquery.com/">JQuery</a></li>
-                        <li><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap</a></li>
-                        <li><a href="https://sql.sh/">SQL</a></li>
+                        <li><a href="https://developer.mozilla.org/fr/"><p>MDN</p></a></li>
+                        <li><a href="https://www.php.net/manual/fr/"><p>PHP</p></a></li>
+                        <li><a href="https://api.jquery.com/"><p>JQuery</p></a></li>
+                        <li><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"><p>Bootstrap</p></a></li>
+                        <li><a href="https://sql.sh/"><p>SQL</p></a></li>
                     </ul>
                 </div>
             </div>
             <div class="row col-4" id="fr-second-col">
                 <div class="border-box">
-                    <h2 class="text-center fs-5 fw-normal">Recherches</h2>
+<!--                    RECHERCHES-->
+                    <h2 class="text-center fs-4 fw-normal">Recherches</h2>
                     <div class="theme-box">
                         <ul class="list-unstyled">
-                            <li><a href="https://www.google.fr">Google</a></li>
-                            <li><a href="https://www.youtube.com/">Youtube</a></li>
+                            <li><a href="https://www.google.fr"><p>Google</p></a></li>
+                            <li><a href="https://www.youtube.com/"><p>Youtube</p></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-box">
-                    <h2 class="text-center fs-5 fw-normal">Tutoriels</h2>
+<!--                    TUTORIELS-->
+                    <h2 class="text-center fs-4 fw-normal">Tutoriels</h2>
                     <div class="theme-box">
                         <ul class="list-unstyled">
-                            <li><a href="https://grafikart.fr/">Grafikart</a></li>
-                            <li><a href="https://openclassrooms.com/fr/">OpenClassRooms</a></li>
+                            <li><a href="https://grafikart.fr/"><p>Grafikart</p></a></li>
+                            <li><a href="https://openclassrooms.com/fr/"><p>OpenClassRooms</p></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-box">
-                    <h2 class="text-center fs-5 fw-normal">Divers</h2>
+<!--                    DIVERS-->
+                    <h2 class="text-center fs-4 fw-normal">Divers</h2>
                     <div class="theme-box">
                         <ul class="list-unstyled">
-                            <li><a href="https://github.com/">GitHub</a></li>
+                            <li><a href="https://github.com/"><p>GitHub</p></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-4 border-box" id="fr-third-col">
-                <h2 class="text-center fs-5 fw-normal">Tools</h2>
+<!--                OUTILS-->
+                <h2 class="text-center fs-4 fw-normal">Outils</h2>
                 <div class="theme-box">
                     <ul class="list-unstyled">
-                        <li><a href="https://fontawesome.com/">FontAwesome</a></li>
-                        <li><a href="https://autoprefixer.github.io/">Autoprefixer CSS</a></li>
-                        <li><a href="https://regexr.com/">Regexr</a></li>
-                        <li><a href="https://validator.w3.org/#validate_by_input">W3C Validator HTML</a></li>
-                        <li><a href="https://jigsaw.w3.org/css-validator/#validate_by_input">W3C Validator CSS</a></li>
+                        <li><a href="https://fontawesome.com/"><p>FontAwesome</p></a></li>
+                        <li><a href="https://autoprefixer.github.io/"><p>Autoprefixer CSS</p></a></li>
+                        <li><a href="https://regexr.com/"><p>Regexr</p></a></li>
+                        <li><a href="https://validator.w3.org/#validate_by_input"><p>Validator HTML</p></a></li>
+                        <li><a href="https://jigsaw.w3.org/css-validator/#validate_by_input"><p>Validator CSS</p></a></li>
+                        <li><a href="https://cssgradient.io/"><p>Gradient Generator</p></a></li>
+                        <li><a href="https://fonts.google.com/"><p>Google font</p></a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
 <!--        SECOND ROW-->
-        <div class="row" id="second-row">
+        <div class="row my-4 mx-auto col-11" id="second-row">
             <div class="border-box">
-                <h2 class="text-center fs-5 fw-normal"><a href="https://sharemycode.fr">Sharemycode</a></h2>
-                <div class="theme-box">
+<!--                SHAREMYCODE-->
+                <h2 class="text-center fs-4 fw-normal title"><a href="https://sharemycode.fr"><p>Sharemycode</p></a></h2>
+                <div class="theme-box px-3 py-3">
                     <p class="fst-italic"><span class="text-decoration-underline">informations</span>: chaque chargement de la page créer un nouveau lien sharemycode.</p>
                     <iframe class="rounded" width="100%" height="500" src="https://sharemycode.fr"></iframe>
                 </div>
@@ -94,37 +102,47 @@
         </div>
 
 <!--        THIRD ROW-->
-        <div class="row" id="third-row">
+        <!--<div class="row my-4 mx-auto col-11" id="third-row">
             <div class="border-box">
-                <h2 class="text-center fs-5 fw-normal">Note</h2>
+                <h2 class="text-center fs-4 fw-normal">Note</h2>
                 <div class="theme-box">
                     <p class="text-center">WIP</p>
                 </div>
             </div>
-        </div>
+        </div>-->
 
 <!--        FOURTH ROW-->
-        <div class="row" id="fourth-row">
+        <div class="row my-4 mx-auto col-11" id="fourth-row">
             <div class="border-box">
-                <h2 class="text-center fs-5 fw-normal"><a href="https://caniuse.com/">Can i use ?</a></h2>
-                <div class="theme-box">
+<!--                CAN I USE-->
+                <h2 class="text-center fs-4 fw-normal title"><a href="https://caniuse.com/"><p>Can i use ?</p></a></h2>
+                <div class="theme-box px-3 py-3">
                     <iframe class="rounded" width="100%" height="500" src="https://caniuse.com/"></iframe>
                 </div>
             </div>
         </div>
 
 <!--        FIFTH ROW-->
-        <div class="row" id="fifth-row">
+        <div class="row my-4 mx-auto col-11" id="fifth-row">
             <div class="border-box">
-                <h2 class="text-center fs-5 fw-normal"><a href="https://awwapp.com/b/u1t1dwled/">AWWAPP</a></h2>
-                <div class="theme-box">
+<!--                AWWAPP-->
+                <h2 class="text-center fs-4 fw-normal title"><a href="https://awwapp.com/b/u1t1dwled/"><p>AWWAPP</p></a></h2>
+                <div class="theme-box px-3 py-3">
                     <iframe class="rounded" width="100%" height="600" src="https://awwapp.com/b/u1t1dwled/"></iframe>
                 </div>
             </div>
         </div>
 
+        <div class="backToTopButton">
+            <a href="#top"><i class="fas fa-arrow-up fa-2x"></i></a>
+        </div>
+
 <!--        FOOTER-->
-        <footer class="row" id="main-footer"></footer>
+        <footer class="row py-2 mt-3" id="main-footer">
+            <p class="text-center pt-3">Site réalisé avec <i class="fas fa-heart text-danger"></i> par <a class="custom-link" href="mailto:alexg.devpro@gmail.com">Alex G</a></p>
+            <p class="text-center">Vous souhaitez en savoir plus sur moi ? <a href="https://twitter.com/AlexGDevPro" class="mx-2"><i class="fab fa-twitter fa-2x align-middle"></i></a>
+                <a href="https://github.com/AlexGDevPro" class="mx-2"><i class="fab fa-github fa-2x align-middle"></i></a></p>
+        </footer>
     </main>
 
     <!--Bootstrap-->
