@@ -4,6 +4,7 @@ NEXT:
     3-Version mobile
     4-Ajout d'une partie analyse sur une seconde page avec des iframes/liens sur les divers site d'analyse.
     5-Ajout d'îcone pour les site qui en ont
+    6-Ajouter un bloc note qui permet l'enregistrement en local
 
 Problèmes connus:
     1-Au chargement la vue se déplace sur l'iframe Can i use.
