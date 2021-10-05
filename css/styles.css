@@ -10,19 +10,20 @@
 
 /*VARIABLES*/
 :root{
-    --main-bgc: #404040;
+    --main-bgc: #2a184a;
     --main-txt-clr: #a6a6a6;
-    --theme-box-bgc: rgb(79, 79, 79);
-    --hover-theme-box-bgc: rgb(102, 102, 102);
+    --theme-box-bgc: #4b2b86;
+    --hover-theme-box-bgc: #5a339f;
+    --hover-theme-box-brd: rgba(213, 86, 31, 0.89);
     --theme-txt-clr: #000;
     --link-clr: #a6a6a6;
     --title-link-clr: #a6a6a6;
-    --hover-title-link-clr: #1d1d1d;
-    --hover-link-clr: #1d1d1d;
+    --hover-title-link-clr: rgba(213, 86, 31, 0.89);
+    --hover-link-clr: rgba(213, 86, 31, 0.89);
     --backToTopButton-bgc: rgba(0, 0, 0, 0.38);
     --hover-backToTopButton-bgc: rgba(0, 0, 0, 0.85);
-    --backToTopButton-txt: #ff8c00;
-    --backToTopButton-brd-clr: #ff8c00;
+    --backToTopButton-txt: rgba(213, 86, 31, 0.89);
+    --backToTopButton-brd-clr: rgba(213, 86, 31, 0.89);
     --headerAndFooter-bgc: rgba(0, 0, 0, 0.6);
     --footer-txt-clr: #3969e3;
     --hover-footer-link-clr: #86a9ff;
@@ -35,6 +36,7 @@ html,body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -52,7 +54,7 @@ a{
     color: var(--link-clr);
     -webkit-transition: color .3s ease;
     -o-transition: color .3s ease;
-    transition: color .3s ease;
+    transition: color .2s ease;
     text-decoration: none;
 }
 
@@ -90,11 +92,12 @@ h2>a{
 .theme-box{
     height: auto;
     width: 100%;
-    border: transparent 1px solid;
+    border: transparent 3px solid;
     border-radius: 15px;
     background: var(--theme-box-bgc);
     color: var(--theme-txt-clr);
-    padding: 5px 10px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
     -webkit-transition: background-color .3s ease, border-color .3s ease;
     -o-transition: background-color .3s ease, border-color .3s ease;
     transition: background-color .3s ease, border-color .3s ease;
@@ -102,7 +105,7 @@ h2>a{
 
 .theme-box:hover{
     background-color: var(--hover-theme-box-bgc);
-    border-color: yellow;
+    border-color: var(--hover-theme-box-brd);
 }
 
 #second-row .theme-box>p, #third-row .theme-box>p{
